@@ -10,7 +10,7 @@ export default function SiteFooter() {
         <div className="footer-inner">
           <div className="footer-socials">
             <a href={profile.discordInvite} target="_blank" rel="noreferrer">Discord</a>
-            <a href="https://github.com/voixera" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/aerizuu" target="_blank" rel="noreferrer">GitHub</a>
           </div>
 
           <p>

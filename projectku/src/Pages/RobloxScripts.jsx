@@ -7,12 +7,12 @@ import scriptLandscape from "../../gallery/PWS 211 Hardscape Materials Handbook.
 import landscapeBackground from "../../gallery/download.jpg";
 
 const violenceDistrict = {
-  name: "Violence District",
+  name: "Steal An Egg",
   category: "Roblox Lua script",
   status: "Preview",
-  description: "A visual preview of the Violence District Roblox script interface and gameplay workflow.",
+  description: "A visual preview of the Steal An Egg Roblox script interface and gameplay workflow.",
   videoSrc: "/roblox-script-videos/ViolenceDistrict.mp4",
-  stack: ["Lua", "Luau", "Roblox Studio"],
+  stack: ["Lua", "Luau", "Exploit", "Roblox Studio", "Roblox API", "Roblox GUI"],
 };
 
 function ScriptShowcase({ script, index }) {
@@ -32,14 +32,14 @@ function GithubRepos() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/voixera/repos?sort=updated&per_page=12")
+    fetch("https://api.github.com/users/aerizuu/repos?sort=updated&per_page=12")
       .then((response) => response.ok ? response.json() : [])
       .then((items) => setRepos(items.filter((repo) => !repo.fork)))
       .catch(() => setRepos([]));
   }, []);
 
   return <section className="github-archive" aria-labelledby="github-title">
-    <div className="github-heading"><span className="kicker">Open source / GitHub</span><h2 id="github-title">More work,<br /><em>in the repo.</em></h2><a className="project-stage-link" href="https://github.com/voixera" target="_blank" rel="noreferrer">Open profile <span aria-hidden="true">↗</span></a></div>
+    <div className="github-heading"><span className="kicker">Open source / GitHub</span><h2 id="github-title">More work,<br /><em>in the repo.</em></h2><a className="project-stage-link" href="https://github.com/aerizuu" target="_blank" rel="noreferrer">Open profile <span aria-hidden="true">↗</span></a></div>
     <div className="github-repos">{repos.map((repo, index) => <a className="github-repo" key={repo.id} href={repo.html_url} target="_blank" rel="noreferrer"><span className="github-repo-index">{String(index + 1).padStart(2, "0")}</span><span><strong>{repo.name}</strong><small>{repo.language || "Repository"}</small></span><span className="github-arrow" aria-hidden="true">↗</span></a>)}</div>
   </section>;
 }

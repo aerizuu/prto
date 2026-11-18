@@ -41,8 +41,8 @@ function ShowcaseProject({ project, index }) {
 }
 
 const featuredProject = {
-  title: "Violence District",
-  description: "Roblox Lua exploiting script preview focused on the Violence District gameplay workflow.",
+  title: "Steal An Egg",
+  description: "Roblox Lua script preview focused on the Steal An Egg gameplay workflow.",
   tags: ["Lua", "Exploiting", "Roblox"],
   showcase: ["Script preview"],
   videoSrc: "/roblox-script-videos/ViolenceDistrict.mp4",
@@ -54,7 +54,7 @@ function GithubRepos() {
   const listRef = useRef(null);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/voixera/repos?sort=updated&per_page=12")
+    fetch("https://api.github.com/users/aerizuu/repos?sort=updated&per_page=12")
       .then((response) => response.ok ? response.json() : [])
       .then((items) => setRepos(items.filter((repo) => !repo.fork)))
       .catch(() => setRepos([]));
@@ -67,7 +67,7 @@ function GithubRepos() {
   }, [repos]);
 
   return <section className="project-repos" aria-labelledby="repo-title">
-    <div className="project-repos-heading"><span className="section-label">GITHUB / OPEN SOURCE</span><h3 id="repo-title">Built with<br /><em>curiosity.</em></h3><p>Projects, experiments, and tools from my GitHub workspace.</p><div className="project-stack"><span>Framer Motion</span><span>GSAP</span><span>WebGL</span><span>React</span><span>Lua</span></div><a className="project-stage-link" href="https://github.com/voixera" target="_blank" rel="noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a></div>
+    <div className="project-repos-heading"><span className="section-label">GITHUB / OPEN SOURCE</span><h3 id="repo-title">Built with<br /><em>curiosity.</em></h3><p>Projects, experiments, and tools from my GitHub workspace.</p><div className="project-stack"><span>Framer Motion</span><span>GSAP</span><span>WebGL</span><span>React</span><span>Lua</span></div><a className="project-stage-link" href="https://github.com/aerizuu" target="_blank" rel="noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a></div>
     <div className="project-repo-list" ref={listRef}>{repos.map((repo, index) => <motion.a className="project-repo" whileHover={{ x: 8 }} transition={{ duration: .2 }} key={repo.id} href={repo.html_url} target="_blank" rel="noreferrer"><span className="project-repo-index">{String(index + 1).padStart(2, "0")}</span><span className="project-repo-name"><strong>{repo.name}</strong><small>{repo.language || "Repository"}</small></span><span className="project-repo-arrow" aria-hidden="true">↗</span></motion.a>)}</div>
   </section>;
 }

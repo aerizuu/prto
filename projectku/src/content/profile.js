@@ -8,7 +8,7 @@ export const profile = {
   yearsExperience: 6,
   heroChips: ["Next.js", "React", "Lua", "Vercel", "Tailwind CSS", "Discord.js"],
   aboutBadges: [],
-  discordHandle: "@voixera",
+  discordHandle: "@aerizuu",
   discordInvite: "https://discord.com/users/975269168184168539",
   groups: [
     {
@@ -117,7 +117,7 @@ export const profile = {
       status: "Update since 2026",
     },
     {
-      name: " Violence District",
+      name: "Steal An Egg",
       category: "Exploiting",
       description:
         "An Atomic script focused on Exploiting Roblox map.",
@@ -295,35 +295,17 @@ export const profile = {
   quote: "\"Code is like humor. When you have to explain it, it's bad. - Alan Kay.\"",
   socials: [
     { label: "Discord", href: "https://discord.com/users/975269168184168539" },
-    { label: "GitHub", href: "https://github.com/voixera" },
+    { label: "GitHub", href: "https://github.com/aerizuu" },
   ],
   projects: [
     {
-      title: "SinyalKita",
+      title: "BananaHUB Key System",
       description:
-        "A web project for presenting SinyalKita with a direct, accessible, and responsive experience.",
-      tags: ["Web", "Responsive", "Vercel"],
-      showcase: ["Public website", "Responsive layout", "Direct access"],
-      thumbnail: "/sinyalkita.png",
-      links: [{ label: "Open Web", href: "https://sinyalkita.site" }],
-    },
-    {
-      title: "ClarityX",
-      description:
-        "A clean web project focused on clarity, presentation, and fast access to the main experience.",
-      tags: ["React", "Vite", "Vercel"],
-      showcase: ["Clean interface", "Fast deployment", "Responsive web"],
-      thumbnail: "/clarityx.png",
-      links: [{ label: "Open Web", href: "https://clarity-x-two.vercel.app" }],
-    },
-    {
-      title: "Sharpness AI",
-      description:
-        "An AI-focused web app for improving image sharpness with a simple and direct user flow.",
-      tags: ["AI", "React", "Vercel"],
-      showcase: ["Image enhancement", "Simple upload flow", "AI utility"],
-      thumbnail: "/sharpnessai.png",
-      links: [{ label: "Open Web", href: "https://sharpnessai.vercel.app" }],
+        "BananaHUB key system.",
+      tags: ["Key System"],
+      showcase: ["BananaHUB"],
+      thumbnail: "/BananaHUB.png",
+      links: [],
     },
     {
       title: "Hello English",
